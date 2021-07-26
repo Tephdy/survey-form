@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEArvey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="title">SEArvey Form</h1>
+            <p id="description">Finish the survey to win amazing prizes!</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="img-container">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/076/301/original/online-survey-illustration-concept-vector.jpg" alt="survey form img">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(88, 204, 233)" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,144C384,139,480,85,576,80C672,75,768,117,864,122.7C960,128,1056,96,1152,80C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+            <div class="form-container">
+                <form id="survey-form">
+
+                    <div class="input-field">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="phone-number" id="phone-label">Phone Number</span></label>
+                        <input type="tel" name="phone" id="phone-number" placeholder="Phone Number" class="form-control" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="number" id="number-label">Age <span>(optional)</span></label>
+                        <input type="number" name="age" id="number" min="10" max="60" placeholder="Age" class="form-control">
+                    </div>
+
+                    <div class="input-field">
+                        <p>Gender</p>
+                        <label>
+                            <input type="radio" name="gender" value="male" class="form-control">Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="female">Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="others">Others
+                        </label>
+                    </div>
+
+                    <div class="role-income">
+                        <div class="input-field">
+                            <p>Which option best describes your current role?</p>
+                            <select id="dropdown" name="role" required>
+                                    <option disabled selected value>Select current role</option>
+                                    <option value="student">Student</option>
+                                    <option value="job">Full Time Job</option>
+                                    <option value="learner">Full Time Learner</option>
+                                    <option value="preferNo">Prefer not to say</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        </div>
+
+                        <div class="input-field">
+                            <p>How much is your monthly income <span>(leave blank if none)</span></p>
+                            <select id="dropdown" name="income" required>
+                                    <option disabled selected value>Select your monthly income</option>
+                                    <option value="student">10-20k</option>
+                                    <option value="job">30-40k</option>
+                                    <option value="learner">50-60k</option>
+                                    <option value="learner">100k+</option>
+                                    <option value="preferNo">Prefer not to say</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <div class="input-field">
+                        <p>Your Skills <span>(select all that apply)</span></p>
+
+                        <label>
+                                <input type="checkbox" name="hobby" value="traditionalArts">Traditional Arts
+                            </label>
+
+                        <label>
+                                <input type="checkbox" name="hobby" value="graphicArts">Graphic Arts
+                            </label>
+
+                        <label>
+                                 <input type="checkbox" name="hobby" value="digitalIllustration">Digital Illustration
+                            </label>
+
+                        <label>
+                                <input type="checkbox" name="hobby" value="photography">Photography
+                            </label>
+
+                        <label>
+                                <input type="checkbox" name="hobby" value="performingArts">Performing Arts
+                            </label>
+
+                        <label>
+                                 <input type="checkbox" name="hobby" value="others">Others
+                            </label>
+                    </div>
+
+                    <div class="input-field">
+                        <p>Why do you want to win amazing prizes?</p>
+                        <textarea name="reason" id="reason" placeholder="Enter your message here..."></textarea>
+                    </div>
+
+                    <div class="input-field">
+                        <button id="submit">Submit</button>
+                    </div>
+            </div>
+
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <h4>Project By: Joseph Amandy</h4>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
